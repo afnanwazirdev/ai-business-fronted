@@ -1,0 +1,161 @@
+.cardGrid {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.cardGrid:hover {
+  border-color: var(--color-border-default);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.imageArea {
+  width: 100%;
+  height: 180px;
+  background: var(--color-bg-subtle);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderImg {
+  font-size: 36px;
+  color: var(--color-text-muted);
+}
+
+.badgeOverlay {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+}
+
+.body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-2);
+}
+
+.category {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-brand-primary);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.05em;
+}
+
+.title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.3;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.price {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.stockCount {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.stockControls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stockBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-xs);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--color-text-primary);
+  transition: all var(--transition-fast);
+}
+
+.stockBtn:hover {
+  background: var(--color-brand-primary-subtle);
+  color: var(--color-brand-primary);
+}
+
+/* List Mode */
+.cardList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  gap: var(--space-4);
+  transition: all var(--transition-fast);
+}
+
+.cardList:hover {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-border-default);
+}
+
+.listLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.listThumb {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--color-text-muted);
+  overflow: hidden;
+}
+
+.listRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}

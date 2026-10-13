@@ -1,0 +1,92 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Status variants */
+.pending {
+  background: var(--color-status-pending-bg);
+  color: var(--color-status-pending);
+  border-color: var(--color-status-pending-border);
+}
+
+.confirmed {
+  background: var(--color-status-confirmed-bg);
+  color: var(--color-status-confirmed);
+  border-color: var(--color-status-confirmed-border);
+}
+
+.dispatched {
+  background: var(--color-status-dispatched-bg);
+  color: var(--color-status-dispatched);
+  border-color: var(--color-status-dispatched-border);
+}
+
+.delivered {
+  background: var(--color-status-delivered-bg);
+  color: var(--color-status-delivered);
+  border-color: var(--color-status-delivered-border);
+}
+
+.returned {
+  background: var(--color-status-returned-bg);
+  color: var(--color-status-returned);
+  border-color: var(--color-status-returned-border);
+}
+
+.cancelled {
+  background: var(--color-status-cancelled-bg);
+  color: var(--color-status-cancelled);
+  border-color: var(--color-status-cancelled-border);
+}
+
+/* Custom variants */
+.primary {
+  background: var(--color-brand-primary-subtle);
+  color: var(--color-brand-primary);
+  border-color: var(--color-brand-primary-border);
+}
+
+.secondary {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+  border-color: var(--color-border-subtle);
+}
+
+.success {
+  background: var(--color-brand-secondary-subtle);
+  color: var(--color-brand-secondary);
+  border-color: var(--color-brand-secondary-border);
+}
+
+/* Pulse animation for low stock or urgent */
+.pulseDot {
+  animation: pulseDotAnim 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseDotAnim {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.4;
+  }
+}

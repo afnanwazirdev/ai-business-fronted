@@ -1,0 +1,45 @@
+.tabList {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 2px;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  background: transparent;
+}
+
+.tab:hover {
+  color: var(--color-text-primary);
+  background: var(--color-bg-subtle);
+}
+
+.tabActive {
+  color: var(--color-brand-primary);
+  border-bottom-color: var(--color-brand-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tabBadge {
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  background: var(--color-bg-subtle);
+  color: var(--color-text-secondary);
+}
+
+.tabActive .tabBadge {
+  background: var(--color-brand-primary-subtle);
+  color: var(--color-brand-primary);
+}
